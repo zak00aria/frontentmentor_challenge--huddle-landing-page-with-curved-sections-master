@@ -28,8 +28,9 @@ h1{
   font-weight:700;
   font-family:2rem;
   margin:1em 0 0.5em;
+  line-height:1.6;
 }
-h1.larg-h{
+.larg-h{
   font-size:2.6rem;
 }
 p{
@@ -37,8 +38,9 @@ p{
   max-width:56ch;
   font-size:1rem;
   margin:0.5em 0;
+  line-height:1.6;
 }
-p.larg-p{
+.larg-p{
   font-size:1.15rem;
 }
 p.centered{
@@ -89,3 +91,28 @@ header .screen-mockups>img{
   width:80%;
 }
 /*end header*/
+@media (max-width:600px){
+  p{
+    max-width:38ch;
+  }
+  .larg-h{
+    font-size:1.9rem;
+  }
+  .larg-p{
+    font-size:.9rem;
+  }
+  .btn.larg{
+    font-size:1rem;
+    padding:15px 50px;
+  }
+  header .logo{
+    height:20px;
+  }
+  header .btn.free-try{
+    font-size:.8rem;
+    padding:5px 20px;
+  }
+  header .screen-mockups>img{
+    width:90%;
+  }
+}
