@@ -33,7 +33,7 @@ h1{
   font-family: 'Poppins';
   font-weight:700;
   font-family:2rem;
-  margin:1em 0 0.5em;
+  margin:1.2em 0 1em;
   line-height:1.6;
 }
 .larg-h{
@@ -43,7 +43,7 @@ p{
   font-weight:400;
   max-width:56ch;
   font-size:1rem;
-  margin:0.5em 0;
+  margin:1em 0;
   line-height:1.6;
 }
 .larg-p{
@@ -68,7 +68,7 @@ p.centered{
   border-radius:100px;
   font-size:1.2rem;
   font-weight:600;
-  margin:2rem 0 1rem;
+  margin:3rem 0 1rem;
   box-shadow:0 4px 8px rgba(0,0,0,0.2);
 }
 .center{
@@ -127,21 +127,27 @@ header .screen-mockups>img{
     font-size:1.9rem;
   }
   .larg-p{
-    font-size:.9rem;
+    font-size:.95rem;
   }
   .btn.larg{
     font-size:1rem;
     padding:15px 50px;
   }
   .xlarg-text{
-    font-size:4rem;
+    font-size:4.5rem;
   }
   .flex-space-around{
     flex-direction: column;
   }
 /*start header*/
+  header{
+    margin-top:20px;
+  }
   header .logo{
     height:20px;
+  }
+  header h1{
+    margin-top:140px;
   }
   header .btn.free-try{
     font-size:.8rem;
@@ -152,8 +158,11 @@ header .screen-mockups>img{
   }
 /*end header*/
 /*start features*/
+  .feature:not(:last-child){
+    margin-bottom:80px;
+  }
   .feature>#title{
-    font-size:.9rem;
+    font-size:1rem;
   }
 /*end features*/
 }
