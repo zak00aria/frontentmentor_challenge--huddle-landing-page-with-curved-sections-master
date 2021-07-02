@@ -1,10 +1,49 @@
 *{
   box-sizing:border-box;
 }
+html{
+  font-size:15px;
+}
 body{
   margin:0;
   font-family:sans-serif;
 }
 a,a:link{
   text-decoration: none;
+}
+.container{
+  max-width:1240px;
+  min-width: 300px;
+  margin:0 auto;
+  padding:0 20px;
+}
+.flex-space-between{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+h1{
+  font-weight:700;
+  outline:solid 1px;
+}
+h1.larg-header{
+  font-size:2.5rem;
+}
+header{
+  margin:40px 0 100px;
+}
+header .logo{
+  height:30px;
+}
+header .btn.free-try{
+  color:hsl(322, 100%, 66%);
+  font-size:1.1rem;
+  font-weight:400;
+  padding:6px 20px;
+  border:solid 1px;
+  border-radius:20px;
+}
+header h1{
+  text-align:center;
 }
