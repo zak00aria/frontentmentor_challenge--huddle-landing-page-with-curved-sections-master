@@ -126,7 +126,7 @@ section{
 /*start feature*/
 section.altern:nth-child(2n+1){
   background:hsl(207, 100%, 98.5%);
-  margin:200px 0;
+  margin:calc(100vw * .1 + 100px) 0;
 }
 section.altern:nth-child(2n+1)>.features.flex-space-between{
   flex-direction:row-reverse;
