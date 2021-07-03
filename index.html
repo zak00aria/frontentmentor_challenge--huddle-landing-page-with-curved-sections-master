@@ -13,7 +13,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; background-color: hsl(340, 45%, 64%);}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -106,25 +106,40 @@
       <a href="#" class="btn larg">Get Started For Free</a>
     </div>
   </section>
-<!--
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-  vestibulum a, ultrices quis sem.
-  
-  Phone: +1-543-123-4567
-  example@huddle.com
-
-  Newsletter
-  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-  send you spam or pass on your email address
-
-  Subscribe
 
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+    <img src="images/bg-footer-top-desktop.svg" alt="" class="bg-footer-top">
+    <div class="container flex-space-between responsive-reverse">
+      <div>
+        <img src="images/logo.svg" alt="Huddle_logo" class="logo">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+          vestibulum a, ultrices quis sem.
+        </p>
+        <address>
+          <span><img src="images/icon-phone.svg" alt="" class="icon">Phone: +1-543-123-4567</span>
+          <span><img src="images/icon-email.svg" alt="" class="icon">example@huddle.com</span>
+        </address>
+      </div>
+      <div>
+        <h1>Newsletter</h1>
+        <p>
+          To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+          send you spam or pass on your email address
+        </p>
+
+        <form action="#">
+          <input type="email" required>
+          <input type="submit" value="Subscribe">
+        </form>
+      </div>
+    </div>
+<!--
+    <div class="attribution center">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+    </div>
 -->
+  </footer>
 </body>
 </html>
