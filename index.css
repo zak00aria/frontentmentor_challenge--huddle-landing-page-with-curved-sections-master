@@ -340,5 +340,8 @@ footer address img.icon{
   footer [type="email"],footer [type="submit"]{
     font-size:.9rem;
   }
+  .s-media{
+    font-size:1.8rem;
+  }
 /*end footer*/
 }
