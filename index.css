@@ -11,6 +11,9 @@ body{
 a,a:link{
   text-decoration: none;
 }
+input:focus{
+  outline:none;
+}
 .container{
   max-width:1240px;
   min-width: 300px;
@@ -71,13 +74,15 @@ p.centered{
   margin:3rem 0 1rem;
   box-shadow:0 4px 8px rgba(0,0,0,0.2);
 }
+.btn.larg:hover, footer [type="submit"]:hover{
+  background:hsl(321, 100%, 78%);
+}
 .center{
   text-align: center;
 }
 /*start header*/
 header{
   margin:40px 0 0;
-  border-bottom:solid 1px;
 }
 header .logo{
   height:30px;
@@ -89,6 +94,9 @@ header .btn.free-try{
   padding:5px 30px;
   border:solid 1px;
   border-radius:30px;
+}
+header .btn.free-try:hover{
+  color:hsl(321, 100%, 78%);
 }
 header h1{
   text-align:center;
@@ -104,7 +112,6 @@ header .screen-mockups>img{
 section{
   position:relative;
   overflow-y: visible;
-  border-bottom:1px solid #000;
 }
 /*start carde*/
 .carde{
@@ -154,17 +161,89 @@ footer{
   background-color:hsl(192, 100%, 9%);
   color:#fff;
   margin:calc(100vw * .1 + 100px) 0 0;
-  padding:60px 0 20px;
+  padding:60px 0 60px;
+}
+footer .flex-space-between{
+  align-items: flex-start;
 }
 footer .logo{
+  height:30px;
   filter:saturate(0) brightness(100);
+  margin-bottom:1.5rem;
+}
+footer h1{
+  font-size:1.8rem;
+  margin:0 0 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:700;
 }
 footer p{
-  max-width:30ch;
+  max-width:42ch;
+}
+footer [type="email"], footer [type="submit"]{
+  font-family: 'Open Sans', sans-serif;
+  font-size:1rem;
+  padding:.6em .5em;
+  margin:1rem 0;
+  border-radius:4px;
+  border:solid 1px transparent;
+}
+footer [type="email"]{
+  width:39ch;
+  margin-right:4ch;
+}
+footer [type="email"]:focus:invalid{
+  outline:none;
+  border:solid 1px hsl(0, 100%, 63%);
+}
+footer [type="submit"]{
+  color:#fff;
+  background:hsl(322, 100%, 66%);
+  padding-left:30px;
+  padding-right:30px;
+}
+footer form{
+  position:relative;
+}
+[type="email"] + span{
+  position:absolute;
+  top:3.8rem;
+  left:0;
+  font-size:.8rem;
+  color:hsl(0, 100%, 63%);
+  display:none;
+}
+[type="email"]:focus:invalid + span{
+  display:block;
+}
+footer address{
+  text-decoration: none;
+  font-style: unset;
+}
+footer address img.icon{
+  width:1em;
+  margin-right:2ch;
+}
+.s-media{
+  margin-top:60px;
+  font-size:2rem;
+  user-select: none;
+}
+.s-media span{
+  color:#fff;
+  font-size:1em;
+  margin:0;
+  margin-right:1rem;
+}
+.s-media .icon-twitter-square{
+  font-size: 1.15em;
+}
+.s-media span:hover{
+  color:hsl(207, 100%, 68%);
 }
 /*end footer*/
 
-@media (max-width:600px){
+@media (max-width:700px){
   h1{
     font-size:1.5rem;
   }
@@ -240,7 +319,19 @@ footer p{
 /*end features*/
 /*start footer*/
   footer>.container>div:not(:first-child){
-    margin-bottom:60px;
+    margin-bottom:40px;
+  }
+  footer .logo{
+    height:20px;
+  }
+  footer h1{
+    font-size:1.4rem;
+  }
+  footer p{
+    font-size:.85rem;
+  }
+  footer [type="email"],footer [type="submit"]{
+    font-size:.9rem;
   }
 /*end footer*/
 }
