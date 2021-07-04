@@ -80,6 +80,8 @@ p.centered{
 .center{
   text-align: center;
 }
+.desktop{display:block;}
+.mobile{display:none;}
 /*start header*/
 header{
   margin:40px 0 0;
@@ -144,14 +146,14 @@ section.altern:nth-child(2n+1)>.features.flex-space-between{
 .features>.illustration>img{
   width:100%;
 }
-.bg-section-top-desktop, .bg-footer-top, .bg-section-bottom-desktop{
+.bg-section-top, .bg-footer-top, .bg-section-bottom{
   position:absolute;
   width:100%;
 }
-.bg-section-top-desktop, .bg-footer-top{
+.bg-section-top, .bg-footer-top{
   bottom:calc(100% - 4px);
 }
-.bg-section-bottom-desktop{
+.bg-section-bottom{
   top:calc(100% - 4px);
 }
 /*end feature*/
@@ -244,6 +246,8 @@ footer address img.icon{
 /*end footer*/
 
 @media (max-width:700px){
+  .desktop{display:none;}
+  .mobile{display:block;}
   h1{
     font-size:1.5rem;
   }
