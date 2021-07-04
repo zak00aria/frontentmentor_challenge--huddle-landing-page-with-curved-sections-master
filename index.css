@@ -317,6 +317,9 @@ footer address img.icon{
     margin-right:auto;
     margin-left:auto;
   }
+  .features>.illustration{
+    margin-bottom:60px;
+  }
   .features>.illustration>img{
     width:80%;
   }
