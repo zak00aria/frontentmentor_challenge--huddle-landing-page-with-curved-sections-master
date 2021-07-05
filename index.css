@@ -18,6 +18,7 @@ input:focus{
   max-width:1240px;
   min-width: 300px;
   margin:0 auto;
+  padding:0 20px;
 }
 .flex-space-between{
   display:flex;
