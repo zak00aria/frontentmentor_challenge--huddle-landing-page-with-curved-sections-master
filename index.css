@@ -134,7 +134,7 @@ section{
   margin-right:auto;
   height:35px;
 }
-.carde>#title{
+.carde>.title{
   font-size:1.5rem;
   margin-top:.55em;
   color:#aaa;
@@ -234,7 +234,7 @@ footer address{
   font-style: unset;
 }
 footer address img.icon{
-  width:1em;
+  width:1.2rem;
   margin-right:2ch;
 }
 .s-media{
@@ -312,7 +312,7 @@ footer address img.icon{
   .carde:not(:last-child){
     margin-bottom:80px;
   }
-  .carde>#title{
+  .carde>.title{
     font-size:1rem;
   }
 /*end carde*/
