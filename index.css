@@ -115,7 +115,7 @@ header .screen-mockups>img{
   width:80%;
 }
 /*end header*/
-section{
+section,.section{
   position:relative;
   overflow-y: visible;
   padding:40px 0;
