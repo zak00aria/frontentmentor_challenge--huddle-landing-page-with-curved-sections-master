@@ -32,7 +32,7 @@ input:focus{
   justify-content: space-around;
   align-items: center;
 }
-h1{
+h1,h2{
   font-family: 'Poppins';
   font-weight:700;
   font-size:2.45rem;
@@ -182,7 +182,7 @@ footer .logo{
   filter:saturate(0) brightness(100);
   margin-bottom:1.2rem;
 }
-footer h1{
+footer h2{
   font-size:1.8rem;
   margin:0 0 1.2rem;
   font-family: 'Open Sans', sans-serif;
@@ -259,7 +259,7 @@ footer address img.icon{
 @media (max-width:700px){
   .desktop{display:none;}
   .mobile{display:block;}
-  h1{
+  h2,h1{
     font-size:1.5rem;
   }
   p{
@@ -342,7 +342,7 @@ footer address img.icon{
   footer .logo{
     height:20px;
   }
-  footer h1{
+  footer h2{
     font-size:1.4rem;
   }
   footer p{
